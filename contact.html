@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <header>
+        <div class="subscribe">
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe to my blog</button>
+            </form>
+        </div>
+    </header>
+
+    <div class="menu" onclick="openArticles()">ALL ARTICLES</div>
+    <div class="menu" onclick="openReviews()">REVIEWS</div>
+    <div class="menu" onclick="openContact()">CONTACT</div>
+    
+    <h1 class="title">Contact me!</h1>
+
+    <div class="container">
+
+        <form>
+            <label> First Name:</label>
+            <input type="text" placeholder="Enter your first name" name="firstName">
+
+            <label> Last Name:</label>
+            <input type="text" placeholder="Enter your last name" name="lastName">
+
+            <label>Country</label>
+            <select name="country">
+                <option value="romania">Romania</option>
+                <option value="germany">Germany</option>
+                <option value="france">France</option>
+                <option value="italy">Italy</option>
+                <option value="spain">Spain</option>
+            </select>
+
+            <label> Email:</label>
+            <input type="email" placeholder="Enter your email" name="email">
+
+            <label> Message:</label>
+            <textarea placeholder="Enter your message" name="message" style="height: 200px;"></textarea>
+
+            <button type="submit" value="Submit">Send Message</button>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
